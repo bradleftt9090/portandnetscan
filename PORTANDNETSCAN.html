@@ -2,6 +2,11 @@
 <html>
 <title>Port & Network Scanning</title>
 <body style="background-color:#f1dca7;">
+<a id="IDS" href="https://intrusiondetectionsystem4.pages.dev">IDS</a>
+<a id="IPS" href="https://1dfb0684.intrusion.pages.dev/aboutme">IPS</a>
+<a id="Worms" href="https://nicholaschancomputersciencefinal.netlify.app">WORMS</a>
+<a id="Home"href="https://1dfb0684.intrusion.pages.dev ">HOMEPAGE</a>
+<hr>
 <h1 id="HEADER1"align="center">Port and Network Scanning</h1>
 <style>
     #HEADER1 {
@@ -30,7 +35,7 @@
         margin-right: 6pc;
     }
     #paragraph2 {
-        width: 600px;
+        width: 520px;
     }
     #bulletpoint {
         width: 600px;
@@ -46,7 +51,7 @@
         margin-right: 6pc;
     }
     #firstline {
-        margin-top:5pc;
+        margin-top:2pc;
     }
     #lastline {
         margin-bottom: 4pc;
@@ -58,20 +63,38 @@
         background-color:#f1dca7;
     }
     #Home {
-        margin-left: 5pc
+        margin-left: 5pc;
+    }
+    #Worms {
+        float: right;
+        margin-right: 5pc;
+    }
+    #IPS {
+        float: right;
+        margin-right: 5pc;
+    }
+    #IDS {
+        float: right;
+        margin-right: 42pc;
+    }
+    #Written {
+        margin-top: 5pc;
     }
 </style>
+<p id="Written">
+<em>By Brad Huallpa</em>    
+</p>
 <p id="firstline"style="font-family: Verdana;"><strong>What are computer ports?</strong> </p>    
 <p>
-Ports act as a docking point for the flow of information between devices in a network. Ports are ordered by their number, which is combined with an IP address to contain a number up to 5 digits long. Digital devices use ports for a variety of tasks, from accessing the Web to sending emails.
+Ports act as a docking point for the flow of information between devices in a network. Ports are ordered by their number, which is combined with an IP address to contain a number up to 5 digits long. Digital devices use ports for a variety of tasks, from accessing the Web to sending emails("What is port").
 </p>
 <p style="font-family: Verdana;"><strong>What is port scanning?</strong> </p>  
 <img id="SYNSCAN"src="https://blog.davidou.org/wp-content/uploads/2022/04/ccdf080c7af7e8a10e9b88444af98393566b4cb5996c89cec34902d46a3d71ee38e5ac44df51fac883ba57996e674fd4.png" alt="How Port Scans Work" style="width: 35%;">
 <p id="paragraph2">
-Open ports, which receive and send data, can leave a vulnerability that can be exploited by hackers, to be used for nefarious reasons. To find these ports, hackers use a method called port scanning. Generally, it involves sending packets to different ports and examining the port's reaction to determine vulnerability.
+Open ports, which receive and send data, can leave a vulnerability that can be exploited by hackers, to be used for nefarious reasons. To find these ports, hackers use a method called port scanning. Generally, it involves sending packets to different ports and examining the port's reaction to determine vulnerability("What is port").
 </p>
 <p id="paragraph2">
-Two main protocols used in port scanning are Transmission Control Protocol (TCP) and User Datagram Protocol (UDP). TCP is characterized as a two-way connection that relies on the destination status. UDP, on the other hand, does not consider the destination status, therefore is considered unreliable compared to TCP. 
+Two main protocols used in port scanning are Transmission Control Protocol (TCP) and User Datagram Protocol (UDP). TCP is characterized as a two-way connection that relies on the destination status. UDP, on the other hand, does not consider the destination status, therefore is considered unreliable compared to TCP("What is port").
 </p>
 <p id="bulletpoint">
     Port scanning can be done using a variety of techniques:
@@ -83,34 +106,32 @@ Two main protocols used in port scanning are Transmission Control Protocol (TCP)
 </p>
 <p style="font-family: Verdana;"><strong>What is network scanning?</strong> </p> 
 <p>
-To begin the process, a hacker must first find an active host. Through a process called host discovery, a network scan is performed to find organizations of IP addresses and hosts. Once the network scan compiles a list of hosts, the port scan determines the open ports that each host has. Network scans can be used by hackers and cybersecurity technicians alike to determine the sensitivity of a network. 
+To begin the process, a hacker must first find an active host. Through a process called host discovery, a network scan is performed to find organizations of IP addresses and hosts. Once the network scan compiles a list of hosts, the port scan determines the open ports that each host has. Network scans can be used by hackers and cybersecurity technicians alike to determine the sensitivity of a network("What is port"). 
 </p>
 <p style="font-family: Verdana;"><strong>How are ports used to transmit malware?</strong> </p> 
 <p>
-A common virus planted after port and network scans is botnet malware. Botnet malware infects computers to be controlled remotely by a botnet controller. This controller can command multitudes of bots across multiple infected devices. This communication is done through open ports. A common port used is the Internet Relay Chat (IRC) ports, such as port 6667. IRC ports are used as they require little authentication and have many tools that can be used to conceal identity. Close monitoring of this port and other ports is necessary, as any suspicious behavior can be interpreted as communication between a bot and its commander. 
+A common virus planted after port and network scans is botnet malware. Botnet malware infects computers to be controlled remotely by a botnet controller. This controller can command multitudes of bots across multiple infected devices. This communication is done through open ports. A common port used is the Internet Relay Chat (IRC) ports, such as port 6667. IRC ports are used as they require little authentication and have many tools that can be used to conceal identity. Close monitoring of this port and other ports is necessary, as any suspicious behavior can be interpreted as communication between a bot and its commander(Cooke para. 6) 
 </p>
 <p style="font-family: Verdana;"><strong>What are ways to stop bot communication in open ports?</strong> </p> 
 <p>
-One method of exposing bots is to offramp a live network and individually examine each string for known bot commands. However, this is tedious and more sophisticated bots have been found using less common IRC networks. Another method is to study the characteristics of bots, as bots often have a much quicker response time than humans and are dormant most of the time, until enacted by a commander. Ultimately, methods of exposing bots will never succeed in wiping out all the bots, rather just a select few that uses inspected command or control traffic. 
+One method of exposing bots is to offramp a live network and individually examine each string for known bot commands. However, this is tedious and more sophisticated bots have been found using less common IRC networks. Another method is to study the characteristics of bots, as bots often have a much quicker response time than humans and are dormant most of the time, until enacted by a commander. Ultimately, methods of exposing bots will never succeed in wiping out all the bots, rather just a select few that uses inspected command or control traffic (Cooke para. 48)
 </p>
 <p style="font-family: Verdana;"><strong>What measures can be used to prevent open ports from being infected?</strong> </p>
 <p id="pbeforebreak">
-There are many network utilities that can be used to view open ports, and subsequent traffic between users on these ports. One commonly used port for personal computers (PC) is Netstat. Generally, Netstat shows protocol statistics on a network using commands. One such command can allow for listening between ports. An example of a listening command is "sudo netstat -plnt". Upon typing this command, a list of active internet connections will appear. For each network connection, the protocol, the local address, and the foreign address will be show. The local address also contains the name of program identification. Other commands such as "grep" can be used to filter out unnecessary information, which can be useful when trying to pinpoint certain suspicious activity. The presence of suspicious activity can be determined if something other than what is expected is listening to the port. A normally used port will either be silent or have the correct service interacting through it. However, service appearing normal through a port is not complete indicated that it is safe. Further tests must be enacted. 
+There are many network utilities that can be used to view open ports, and subsequent traffic between users on these ports. One commonly used port for personal computers (PC) is Netstat. Generally, Netstat shows protocol statistics on a network using commands. One such command can allow for listening between ports. An example of a listening command is "sudo netstat -plnt". Upon typing this command, a list of active internet connections will appear. For each network connection, the protocol, the local address, and the foreign address will be show. The local address also contains the name of program identification. Other commands such as "grep" can be used to filter out unnecessary information, which can be useful when trying to pinpoint certain suspicious activity. The presence of suspicious activity can be determined if something other than what is expected is listening to the port. A normally used port will either be silent or have the correct service interacting through it. However, service appearing normal through a port is not complete indicated that it is safe. Further tests must be enacted("Check listening ports"). 
 </p>
 <hr id="HR">
 <h2 id="References">References</h2>
 <p id="citations">
-What Is Port Scanning and How Does It Work?" Avast, <a href="https://www.avast.com/en-us/business/resources/what-is-port-scanning#">"https://www.avast.com/en-us/business/resources/what-is-port-scanning#</a> 
+What Is Port Scanning and How Does It Work?" Avast, 13 Jan. 2021, Retrieved 8 Dec. 2022,<a href="https://www.avast.com/en-us/business/resources/what-is-port-scanning#">"https://www.avast.com/en-us/business/resources/what-is-port-scanning#</a> 
 </p>
 <p>
 Cooke, Evan, et al. The Zombie Roundup: Understanding, Detecting, and Disrupting Botnets. Electrical Engineering and 
-Computer Science Department University of Michigan,   
+Computer Science Department University of Michigan, Retrieved 8 Dec. 2022,   
 <a href="https://www.usenix.org/legacy/publications/library/proceedings/sruti05/prelim_papers/cooke/cooke_html/">https://www.usenix.org/legacy/publications/library/proceedings/sruti05/prelim_papers/cooke/cooke_html/</a> 
 </p>
 <p id="lastline">
-Rackspace Support. "Check Listening Ports with Netstat." Support Network, Rackspace US, Inc, 21 June 2012, <a href="https://docs.rackspace.com/support/how-to/checking-listening-ports-with-netstat/">https://docs.rackspace.com/support/how-to/checking-listening-ports-with-netstat/</a>
+Rackspace Support. "Check Listening Ports with Netstat." Support Network, Rackspace US, Inc, 21 June 2012, Retrieved 8 Dec. 2022,<a href="https://docs.rackspace.com/support/how-to/checking-listening-ports-with-netstat/">https://docs.rackspace.com/support/how-to/checking-listening-ports-with-netstat/</a>
 </p>
-<hr>
-<a id="Home"href="https://1dfb0684.intrusion.pages.dev ">HOMEPAGE</a>
 </body>
 </html
